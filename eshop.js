@@ -9,6 +9,8 @@ function loadGoods() {
         for (var key in data){
             out+='<h3>'+data[key]['name']+'</h3>';
             out+='<p>'+data[key]['cost']+'</p>';
+            out+='<img src="'+data[key].image+'">';
+
         }
         $('#goods').html(out);
     })
